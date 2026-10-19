@@ -273,8 +273,14 @@ X86_FUNC(sub_001D2860) {
     if (g_gun != 1 && (from == kFromTracerA || from == kFromTracerB)) OnGun(out + kMatrixPosition, true);
 }
 
-// recoil dies away by a factor a frame
-void RecoilDecay(X86Context& ctx, uint8_t*) { ctx.xmm[0].f[0] = std::pow(ctx.xmm[0].f[0], FrameShare()); }
+// recoil dies away by a factor a frame; with the no recoil option the player's weapons (ebx the owner) have none
+void RecoilDecay(X86Context& ctx, uint8_t*) {
+    if (game::Opt().no_recoil && ctx.ebx == Player()) {
+        ctx.xmm[0].f[0] = 0.0f;
+        return;
+    }
+    ctx.xmm[0].f[0] = std::pow(ctx.xmm[0].f[0], FrameShare());
+}
 
 constexpr uint32_t kDataSwayShares = 0x104;
 
