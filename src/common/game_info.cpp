@@ -218,6 +218,7 @@ const app::GameInfo app::kGame = {
                 {"aim_assist", &game::Opt().aim_assist, nullptr},
                 {"rumble_intensity", nullptr, &game::Opt().rumble_intensity},
                 {"gyro_aiming", &game::Opt().gyro_aiming, nullptr},
+                {"no_recoil", &game::Opt().no_recoil, nullptr},
                 {"menu_animations", &game::Opt().menu_animations, nullptr}},
     .load = game::Load,
     .save = game::Save,

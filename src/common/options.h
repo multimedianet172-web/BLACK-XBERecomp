@@ -36,6 +36,7 @@ struct Options {
     uint32_t rumble_intensity = 100;  // percent of the game's vibration
     bool gyro_aiming = false;  // the controller's gyro turns the view, beside the right stick
     float gyro_sensitivity = 2.0f;  // degrees the view turns a degree the controller turns
+    bool no_recoil = false;  // the player's weapons do not kick the aim
     bool menu_animations = true;  // off: menu pages and the pause menu change without sliding in and out
     std::map<std::string, std::string> keys;  // action id to key names, absent is the default
 };

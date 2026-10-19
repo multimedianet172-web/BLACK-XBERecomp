@@ -47,6 +47,7 @@ constexpr Entry kEntries[] = {
     {"RELOAD BLUR", {u"Flou au rechargement", u"Nachlade-Unschärfe", u"Sfocatura in ricarica", u"Desenfoque al recargar"}},
     {"SKIP INTROS", {u"Passer les intros", u"Intros überspringen", u"Salta introduzione", u"Saltar introducción"}},
     {"MENU ANIMATIONS", {u"Animations des menus", u"Menüanimationen", u"Animazioni dei menu", u"Animaciones de los menús"}},
+    {"NO RECOIL", {u"Sans recul", u"Kein Rückstoß", u"Nessun rinculo", u"Sin retroceso"}},
     {"PAUSE ON FOCUS LOSS", {u"Pause en arrière-plan", u"Pause im Hintergrund", u"Pausa in background", u"Pausa en segundo plano"}},
     {"LANGUAGE", {u"Langue", u"Sprache", u"Lingua", u"Idioma"}},
     {"AUDIO OUTPUT", {u"Sortie audio", u"Audioausgabe", u"Uscita audio", u"Salida de audio"}},
